@@ -33,8 +33,8 @@ public class Vjezba01 {
 
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			Component krug = (Component) e.getSource();
-			Graphics g = krug.getGraphics();
+			Component c = (Component) e.getSource();
+			Graphics g = c.getGraphics();
 
 			int size = 40;
 
