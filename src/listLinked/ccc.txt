@@ -1,0 +1,4 @@
+I) Doraditi implementaciju liste sa predavanja:
+1. Dodati metodu int size() sa pracenjem velicine liste
+2. Dodati metodu Object[] toArray()
+3. Dodati metodu Object remove() koja ukloni element sa kraja liste i vrati uklonjeni element.
