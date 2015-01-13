@@ -30,7 +30,7 @@ public class QueueIntTest {
 		System.out.println(sta.pop());
 		System.out.println(sta.pop());
 
-
+		System.out.println("Size of stack: " + sta.getSize());
 
 	}
 
