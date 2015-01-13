@@ -22,7 +22,9 @@ public class TestBinarySearchTree {
 		
 		tree.printTree();
 		
-		
+		if (tree.contains(7)){
+			System.out.println("Yes");
+		}
 	}
 
 }
