@@ -1,0 +1,3 @@
+||) Implementirati double linked list
+1. Poboljsati get metodu da minimizira kretanje kroz listu.
+2. Pojednostaviti ostale metode.
