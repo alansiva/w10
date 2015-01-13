@@ -8,7 +8,7 @@ package listLinked;
  */
 
 /*added methods for homework
- * @author jesenko*/
+ * @author jesenkogavric*/
 
 public class List {
 	private ValueWrapper first, last;
