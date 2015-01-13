@@ -1,4 +1,4 @@
-package com.bitcamp.day01;
+package com.bitcamp.day02;
 
 /*
  * week 10 day 02 lab work
