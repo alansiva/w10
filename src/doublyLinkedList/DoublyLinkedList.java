@@ -20,12 +20,16 @@ public class DoublyLinkedList {
 		/* constructor */
 		public Node(int value) {
 			this.value = value;
+			next = null;
+			previous = null;
 		}
 	}// end of class Node
 
 	/**
 	 * Method adds a new element to the end of the list
-	 * @param value to add
+	 * 
+	 * @param value
+	 *            to add
 	 */
 	public void add(int value) {
 		Node newNode = new Node(value);
@@ -46,11 +50,11 @@ public class DoublyLinkedList {
 		}
 	}
 
-	/* imam problem kada brisem zadnji clan sa liste,
-	 * u ostalim slucajevim radi*/
 	/**
-	 * Remove an element from a certain index of the list 
-	 * @param index of the element which is going to be removed
+	 * Remove an element from a certain index of the list
+	 * 
+	 * @param index
+	 *            of the element which is going to be removed
 	 */
 	public void remove(int index) {
 		if (index < 0 || index > size)
@@ -64,7 +68,7 @@ public class DoublyLinkedList {
 		Node current = head.next;
 		Node previous = head;
 		int i = 1;
-		while (i < index ) {
+		while (i < index) {
 			if (current.next == null) {
 				System.out.println("test");
 				previous.next = null;
@@ -75,10 +79,12 @@ public class DoublyLinkedList {
 			previous = previous.next;
 			i++;
 		}
+		i++;
 		Node newNode = current.next;
 		previous.next = newNode;
-		newNode.previous = previous;
-		current.next = null;
+		if (i != size)
+			newNode.previous = previous;
+		current = null;
 		size--;
 	}
 
