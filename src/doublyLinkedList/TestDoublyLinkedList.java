@@ -15,13 +15,19 @@ public class TestDoublyLinkedList {
 		list.add(2);//2
 		list.add(5);//3 
 		
-		System.out.println("Size of the list: " + list.size());
 		System.out.println(list.toString());
+		System.out.println("Size of the list: " + list.size());
 		
-		list.remove(2);	
+		list.remove(3);	
+		System.out.println(list.toString());
 		System.out.println("Size after remove: " + list.size());
 		
+		
+		
+		list.add(88);//4
 		System.out.println(list.toString());
+		System.out.println("Size after las add: " + list.size());
+		
 
 	}
 
