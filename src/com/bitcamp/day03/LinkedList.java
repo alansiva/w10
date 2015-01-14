@@ -107,6 +107,12 @@ public class LinkedList<T> implements Iterable<T> {
 			current = current.next;
 			return value;
 		}
+
+		@Override
+		public void remove() {
+			// TODO Auto-generated method stub
+			
+		}
 	}
 
 }// end of class LinkedList
