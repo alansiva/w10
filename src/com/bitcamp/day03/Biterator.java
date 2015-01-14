@@ -16,4 +16,10 @@ public class Biterator<T> implements Iterator<T> {
 		return null;
 	}
 
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
