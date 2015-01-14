@@ -1,5 +1,6 @@
 package doublyLinkedList;
 
+
 /**
  * Class implements a double linked list
  * 
@@ -57,34 +58,25 @@ public class DoublyLinkedList {
 	 *            of the element which is going to be removed
 	 */
 	public void remove(int index) {
-		if (index < 0 || index > size)
-			throw new IllegalArgumentException("Index out of range");
+		if (index < 0 || index >= size)
+			throw new IndexOutOfBoundsException("Index out of list");
 
 		if (index == 0) {
 			head = head.next;
 			size--;
 			return;
 		}
+
 		Node current = head.next;
 		Node previous = head;
-		int i = 1;
-		while (i < index) {
-			if (current.next == null) {
-				System.out.println("test");
-				previous.next = null;
-				current = null;
-				size--;
-			}
+		int count = 1;
+		while (count < index) {
 			current = current.next;
 			previous = previous.next;
-			i++;
+			count++;
 		}
-		i++;
-		Node newNode = current.next;
-		previous.next = newNode;
-		if (i != size)
-			newNode.previous = previous;
-		current = null;
+		previous.next = current.next;
+		current.next = null;
 		size--;
 	}
 
