@@ -1,4 +1,4 @@
-package ba.bitcamp.day04.csvDatabase;
+package ba.bitcamp.csvDatabaseday04;
 
 public class CSVReadWrite {
 
