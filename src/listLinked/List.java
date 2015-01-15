@@ -1,7 +1,6 @@
 package listLinked;
 
-import java.util.Collection;
-import java.util.Iterator;
+
 
 /**
  * Simple implementation of basic list methods, based on single linked element wrappers.
@@ -13,7 +12,7 @@ import java.util.Iterator;
 /*added methods for homework
  * @author jesenkogavric*/
 
-public class List implements Iterable{
+public class List {
 	private ValueWrapper first, last;
 	private int size = 0;
 	/**
@@ -218,10 +217,5 @@ public class List implements Iterable{
 		return sb.append(']').toString();
 	}
 
-	@Override
-	public Iterator iterator() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
