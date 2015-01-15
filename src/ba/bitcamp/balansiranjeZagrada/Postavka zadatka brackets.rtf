@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red196\green31\blue29;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl560
+
+\f0\fs48 \cf2 \cb3 Balansiranje zagrada (zadatak za vje\'9ebanje stackova)\
+\pard\pardeftab720\sl400
+
+\fs26 \cf0 Evo i formalizacija zadatka koji sam dao tokom predavanja u ponedjeljak.\
+\
+Napraviti program koji nudi korisniku da unese izraz koji mo\'9ee sadr\'9eavati zagrade. Zatim ispitati unijeti izraz i provjeriti da li su unutar njega zagrade dobro balansirane.\
+\
+"Dobro balansirane" zagrade defini\'9aemo na sljede\uc0\u263 i na\u269 in: svaka zagrada je zatvorena nakon \'9ato je adekvatna zagrada zatvorena. Svaka otvorena zagrada je zatvorena tek nakon \'9ato su sve zagrade unutar nje zatvorene. Primjer je jasniji od obja\'9anjenja:\
+\
+Primjeri dobro balansiranih zagrada:\
+* ( 3 + 5 ) * 15\
+* array[(3 + 5) * 15]\
+* [ \{ ( ) \} ( ) ]\
+\
+Primjeri lo\'9ae balansiranih zagrada:\
+* (\
+* [ ) ( ]\
+* [ ( ] )\
+\
+Dakle, izraz koji korisnik unese mo\'9ee sadr\'9eavati brojeve, tekst i zagrade. Prilikom provjere balansiranosti zagrada, mo\'9eete ignorisati sve ostale karaktere. Ako je izraz dobro balansiran, ispisati potvrdu, a ako nije ispisati i to.\
+\
+Bonus*: Dozvoliti da se unutar zagrada na\uc0\u273 u i "stringovi", tj. tekst pod navodnicima. Sve znakove koji su dio stringa treba ignorisati, **uklju\u269 uju\u263 i zagrade**. Naprimjer, i ovo bi bio ispravno balansiran izraz:\
+\
+* print(" [ zagrade u stringu \} ")\
+\
+Savjeti:\
+* Dodajte `peek` metodu u implementaciju stacka. Ova metoda vra\uc0\u263 a element sa vrha stacka, bez da ga ukloni\
+\
+Opis algoritma koji treba implementirati:\
+Otvorene zagrade stavljamo na stack. Kada do\uc0\u273 emo do zatvorene zagrade pop-amo zagradu sa stacka i vidimo da li si odgovarju. U slu\u269 aju da ne odgovaraju, dobivamo negativan rezultat i mo\'9eemo prekinuti algoritam. Ako je na kraju \u269 itanja izraza stack prazan, zna\u269 i da imamo dobro balansirane zagrade.\
+\
+Sretno!\
+\'97 Damir\
+}
