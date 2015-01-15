@@ -1,4 +1,4 @@
-package com.bitcamp.day03;
+package ba.bitcamp.day03;
 
 public class CSVBuilder {
 

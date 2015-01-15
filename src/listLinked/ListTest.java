@@ -5,28 +5,28 @@ public class ListTest {
 		List test = new List();
 		System.out.println("Empty list: " + test);
 		
-		test.add("B");
-		test.add("D");
+		test.add(4);
+		test.add(6);
 		System.out.println("After add: " + test);
 		
-		test.push("A");
-		test.push("X");
+		test.push(9);
+		test.push(3);
 		System.out.println("After push: " + test);
 		
 		test.pop();
 		System.out.println("After pop: " + test);
 		
-		test.insertAt("C", 2);
+		test.insertAt(12, 2);
 		System.out.println("After insert: " + test);
 		
-		test.insertAt("X", 4);
+		test.insertAt(15, 4);
 		System.out.println("After insert at end: " + test);
 		
 		test.removeAt(4);
-		test.add("E");
+		test.add(7);
 		System.out.println("After remove from end: " + test);
 	
-		test.add("Z");
+		test.add(2);
 		System.out.println("After add: " + test);
 		System.out.println(test.size());
 		

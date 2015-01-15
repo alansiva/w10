@@ -1,4 +1,4 @@
-package com.bitcamp.samostalniRad;
+package ba.bitcamp.samostalniRad;
 
 /*
  *  Priority Queue test class

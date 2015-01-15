@@ -1,4 +1,4 @@
-package com.bitcamp.day01;
+package ba.bitcamp.day01;
 
 /*
  * Test class for QueueInt

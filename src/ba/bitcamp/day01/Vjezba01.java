@@ -1,4 +1,4 @@
-package com.bitcamp.day01;
+package ba.bitcamp.day01;
 
 import java.awt.Component;
 import java.awt.Graphics;
