@@ -12,45 +12,52 @@ public class ShelterQueue {
 	public void addAnimaltoShelter(String animal) {
 		if (animal.equalsIgnoreCase("cat")) {
 			cats.push(animal);
+			System.out.println("new cat brought to shelter" + cats.getIndex());
 		} else if (animal.equalsIgnoreCase("dog")) {
 			dogs.push(animal);
+			System.out.println("new dog brought to shelter" + dogs.getIndex());
 		} else {
-			throw new IllegalArgumentException("Only cats and dogs please.");
+			throw new IllegalArgumentException("Only cat or dog");
 		}
 	}
 
-	public String pop(String input) {
+	public void pop(String input) {
 		if (dogs.isEmpty() && cats.isEmpty()) {
-			return "No animals in shelter";
+			System.out.println("Empty shelter");
+			return;
 		}
-
 		if (input.equalsIgnoreCase("cat")) {
 			if (cats.isEmpty()) {
-				return "No More cats";
+				System.out.println("No more cats in shelter");
+				return;
 			}
-			String temp = cats.peek();
-			cats.pop();
-			return temp;
+			cats.dequeue();
+			System.out.println("Cat adopted");
+		
 
 		} else if (input.equalsIgnoreCase("dog")) {
 			if (dogs.isEmpty()) {
-				return "No more dogs";
+				System.out.println("No more dogs in shelter");
+				return;
 			}
-			String temp = dogs.peek();
-			dogs.pop();
-			return temp;
+			dogs.dequeue();
+			System.out.println("Dog adopted");
+			return;
 		} else {
 
-			if (cats.getIndexX() < dogs.getIndexX() || dogs.isEmpty()) {
-				String temp = cats.peek();
-				cats.pop();
-				return temp;
-			} else if (cats.getIndexX() > dogs.getIndexX() || cats.isEmpty()) {
-				String temp = dogs.peek();
-				dogs.pop();
-				return temp;
+			if (cats.getIndex() < dogs.getIndex() || dogs.isEmpty()) {
+				cats.dequeue();
+				System.out.println("last cat adopted");
+				return;
+
+			} else if (dogs.getIndex() < cats.getIndex() || cats.isEmpty()) {
+
+				dogs.dequeue();
+				System.out.println("last dog adopted");
+				return;
 			}
 		}
-		return "";
+
 	}
+
 }

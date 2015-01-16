@@ -1,43 +1,47 @@
 package ba.bitcamp.zadacaBenjo2;
 
-public class MyQueue {
+public class MyQueue extends IDnumber {
 	private Node head;
 	private Node tail;
-	private int mainCount = 1;
+	private int idxMaker = 0;
+	private IDnumber ordinal = new IDnumber();
 
 	public MyQueue() {
 		this.head = null;
-		this.tail = null;
+
 	}
 
 	public void push(String value) {
-		Node newNode = new Node(value);
+
 		if (head == null) {
-			head = tail = newNode;
-			newNode.index = mainCount;
-			mainCount++;
-		} else {
-			tail.next = newNode;
-			tail = newNode;
-			newNode.index = mainCount;
-			mainCount++;
+			head = new Node(value, idxMaker);
+			tail = head;
+			idxMaker++;
 		}
+
+		Node newNode = new Node(value, idxMaker);
+		tail.next = newNode;
+		tail = newNode;
+		idxMaker++;
+
 	}
 
-	public int getIndexX() {
-		return head.getIndex();
+	public int getIndex() {
+		return tail.index;
 	}
 
-	public String pop() {
+	public String dequeue() {
 		if (head == null) {
 			throw new NullPointerException("Empty queue");
+
 		} else if (head == tail) {
-			Node current = head;
-			String value = current.value;
+
+			String value = head.value;
 			head = tail = null;
-			current = null;
 			return value;
+
 		} else {
+
 			Node current = head;
 			head = head.next;
 			String value = current.value;
@@ -53,61 +57,23 @@ public class MyQueue {
 		return head.value;
 	}
 
-	public int size() {
-		if (head == null) {
-			return 0;
-		} else {
-			return getSize(head, 0);
-		}
-	}
-
-	private int getSize(Node current, int counter) {
-		if (current == null) {
-			return counter;
-		} else {
-			return getSize(current.next, counter + 1);
-		}
-
-	}
-
-	public boolean contains(String value) {
-		if (head.value.equals(value)) {
-			return true;
-		} else {
-			return contains(head, value);
-		}
-	}
-
-	private boolean contains(Node current, String value) {
-
-		if (current == null) {
-			return false;
-		}
-		if (current.value.equals(value)) {
-			return true;
-		} else {
-			return contains(current.next, value);
-		}
-	}
-
 	public boolean isEmpty() {
 		return (head == null);
 	}
 
 	private static class Node {
+
 		public String value;
 		public Node next;
-		public int index;
+		int index = 0;
 
-		public Node(String value) {
+		public Node(String value, int idx) {
+
 			this.value = value;
 			this.next = null;
-			this.index = 0;
+			this.index = idx;
 		}
 
-		public int getIndex() {
-			return index;
-		}
 	}
 
 }
