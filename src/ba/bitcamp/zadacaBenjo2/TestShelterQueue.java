@@ -11,14 +11,18 @@ public class TestShelterQueue {
 		shell.addAnimaltoShelter("cat");
 		shell.addAnimaltoShelter("dog");
 		shell.addAnimaltoShelter("dog");
+		shell.addAnimaltoShelter("dog");
+		shell.addAnimaltoShelter("dog");
 			
 		shell.pop("cat");
 		shell.pop("cat");
 		
 		shell.pop("dog");
-		shell.pop("dog");
-
+		
 		shell.pop("");
+
+
+	
 
 	}
 }

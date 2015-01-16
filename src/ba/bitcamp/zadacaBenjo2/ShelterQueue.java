@@ -47,13 +47,13 @@ public class ShelterQueue {
 
 			if (cats.getIndex() < dogs.getIndex() || dogs.isEmpty()) {
 				cats.dequeue();
-				System.out.println("last cat adopted");
+				System.out.println("Cat adopted");
 				return;
 
 			} else if (dogs.getIndex() < cats.getIndex() || cats.isEmpty()) {
 
 				dogs.dequeue();
-				System.out.println("last dog adopted");
+				System.out.println("Dog adopted");
 				return;
 			}
 		}
