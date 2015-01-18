@@ -1,4 +1,4 @@
-package listLinked;
+package ba.bitcamp.samostalniRad.listLinked;
 
 /**
  * Node interface for read-only walking through list.

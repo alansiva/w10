@@ -1,4 +1,4 @@
-package ba.bitcamp.zadacaBenjo;
+package ba.bitcamp.samostalniRad.zadacaBenjo;
 
 /**
  * Test class for MyQueue

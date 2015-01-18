@@ -1,4 +1,4 @@
-package ba.bitcamp.balansiranjeZagrada;
+package ba.bitcamp.samostalniRad.balansiranjeZagrada;
 
 /*
  * Klasa implementira provjeru rasporeda zagrada u izrazu koristeci 

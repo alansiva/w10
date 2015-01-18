@@ -1,4 +1,4 @@
-package doublyLinkedList;
+package ba.bitcamp.samostalniRad.doublyLinkedList;
 
 
 /**

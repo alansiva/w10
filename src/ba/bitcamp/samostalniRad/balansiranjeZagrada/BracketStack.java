@@ -1,4 +1,4 @@
-package ba.bitcamp.balansiranjeZagrada;
+package ba.bitcamp.samostalniRad.balansiranjeZagrada;
 
 /*
  * Class used for brackets order test exercise
