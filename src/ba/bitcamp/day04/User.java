@@ -1,4 +1,4 @@
-package ba.bitcamp.csvDatabaseday04;
+package ba.bitcamp.day04;
 
 public class User {
 
