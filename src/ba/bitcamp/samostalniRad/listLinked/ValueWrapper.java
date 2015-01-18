@@ -1,4 +1,4 @@
-package listLinked;
+package ba.bitcamp.samostalniRad.listLinked;
 
 /**
  * {@link ListNode} implementation. 

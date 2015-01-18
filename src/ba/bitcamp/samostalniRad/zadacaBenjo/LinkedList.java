@@ -1,4 +1,4 @@
-package ba.bitcamp.zadacaBenjo;
+package ba.bitcamp.samostalniRad.zadacaBenjo;
 
 /**
  * Class implements a linked list of integers

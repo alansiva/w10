@@ -1,4 +1,4 @@
-package ba.bitcamp.zadacaBenjo2;
+package ba.bitcamp.samostalniRad.zadacaBenjo2;
 
 public class TestShelterQueue {
 	public static void main(String[] args) {

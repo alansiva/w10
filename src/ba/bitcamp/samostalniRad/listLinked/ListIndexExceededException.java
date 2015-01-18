@@ -1,4 +1,4 @@
-package listLinked;
+package ba.bitcamp.samostalniRad.listLinked;
 
 /**
  * Runtime exception thrown if index based list operations failed.
