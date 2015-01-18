@@ -78,7 +78,7 @@ public class TestPhoneBook {
 		return;
 		}
 		
-	}//end if main method
+	}//end of main method
 
 }//end of class Test
 
